@@ -9,8 +9,9 @@ Use this application to explore empirical urban light data and evaluate urban li
 
 # Directions:
 1. Download Processing (2.2.1) - https://processing.org/download/
-2. Clone The Repository
-3. Run "FluxMap.pde" using Processing Application
+2. Confirm Lastest Java is Installed https://java.com/en/download/mac_download.jsp
+3. Clone The Repository
+4. Run "FluxMap.pde" using Processing Application
 
 # Data Viewer
  ![FluxMap](Processing/FluxMap/screenshots/dataView.png "Light Data Viewer")
