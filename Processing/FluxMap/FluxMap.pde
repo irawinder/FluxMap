@@ -6,7 +6,6 @@
  *  [COMPLETE]   (2) View Empirical Urban Lighting Fixtures (i.e. light poles)
  *  [COMPLETE]   (3) Simulate Lighting Data from Model of Lighting Fixtures
  *  [COMPLETE]   (4) Compare Fit of Model to Observed Data
- *  [INCOMPLETE] (5) Callibrate Lighting Model with Empirical Urban Lighting Data
  */
  
 String CREDITS = 
