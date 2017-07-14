@@ -1,5 +1,5 @@
 # FluxMap
-Use this application to explore empirical urban light data and evaluate urban light simulations models.
+Use this application to explore empirical urban light data and evaluate accuracy of urban light simulations.
 
 # Features:
 1. View Empirical Urban Lighting Data (i.e. lux values from a vehicle sensor)
