@@ -93,7 +93,7 @@ void drawAttributes() {
   textAlign(LEFT);
   
   text(
-    "Background:\n\nUse this application to explore empirical urban light data and evaluate urban light simulations models.", 
+    "Background:\n\nUse this application to explore empirical urban light data and evaluate urban light simulations.", 
     dX + gridWidth + dY + textMargin, dY + textMargin, dX - 2*dY - 2*textMargin, gridHeight
   );
   
