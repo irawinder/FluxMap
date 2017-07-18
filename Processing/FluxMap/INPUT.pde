@@ -29,7 +29,7 @@ String[][] buttonNames =
   { "Model Error", "e" },
   { "Point Source Model", "1" },
   { "Gaussian LED Model", "2" },
-  { "Next Fit Type", "t" },
+  { "Next Model Fit", "t" },
   { "VOID", "" },
   { "Increase Resolution", ">" },
   { "Decrease Resolution", "<" },

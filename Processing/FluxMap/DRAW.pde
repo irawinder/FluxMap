@@ -303,7 +303,7 @@ void drawGridArea() {
     } else if(modelType.equals("gaussian") ) {
       name += "Gaussian LED Model";
     }
-    name += "\nFit Type: " + fitNames[fitType];
+    name += "\nModel Fit: " + fitNames[fitType];
     fill(textColor);
     textAlign(RIGHT);
     text(name, dX + gridWidth - 10, dY + 20);
