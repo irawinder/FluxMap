@@ -29,7 +29,7 @@ String[][] buttonNames =
   { "Model Error", "e" },
   { "Point Source Model", "1" },
   { "Gaussian LED Model", "2" },
-  { "VOID", "" },
+  { "Next Fit Type", "t" },
   { "VOID", "" },
   { "Increase Resolution", ">" },
   { "Decrease Resolution", "<" },
@@ -115,6 +115,9 @@ void keyPressed() {
     case ' ':
       key_space();
       break;
+    case 't':
+      key_t();
+      break;
   }
   
   if (key == CODED) {
@@ -198,6 +201,10 @@ void mousePressed() {
   
   if(mainMenu.buttons[ bHash.get("SPACE") ].over()){ 
     key_space();
+  }
+  
+  if(mainMenu.buttons[ bHash.get("t") ].over()){ 
+    key_t();
   }
   
   loop();
@@ -396,6 +403,19 @@ void key_space() {
     gridSize = GRID_SIZE;
     centerLatitude = LAT;
     centerLongitude = LON;
+    initEnvironment();
+    initializing = false;
+  }
+}
+
+void key_t() {
+  if (!initializing) {
+    if (fitType < 3) {
+      fitType ++;
+    } else {
+      fitType = 0;
+    }
+    setFit(fitType);
     initEnvironment();
     initializing = false;
   }

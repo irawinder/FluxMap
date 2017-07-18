@@ -22,6 +22,13 @@ String CREDITS =
 String AREA = "Kendall Square";
 String CITY = "Cambridge, MA";
 
+// CoEfficients for the model (Derived By Anthony Cheng)
+// 0 = "Sample Test Coefficients",
+// 1 = "Least Squares (All Data)",
+// 2 = "Least Squares (Sample n=500)",
+// 3 = "Least Squares (Quiet Neighborhood Area)"
+int fitType = 3;
+
 // Library needed for ComponentAdapter()
 import java.awt.event.*;
 
@@ -47,11 +54,8 @@ float nudgeDegree = 0.001; // Amount of degrees to translate when moving canvas 
 float azimuth = AZIMUTH; // 0 indicates North is Up
 
 // Initial Coefficients
-float pointLuminance = 2000.0;
-float pointHeight = 10.0;
-float gaussianLuminance = 800.0;
-float gaussianHeight = 10.0;
-float gaussianG = 1.5;
+float pointHeight,    pointLuminance;
+float gaussianHeight, gaussianLuminance, gaussianG;
 
 // (A) Existing light pole infrastructure: PVector(lat, lon); PVector(u, v)
 ArrayList<PVector[]> lightFixture;
@@ -106,14 +110,17 @@ void setup() {
   );
   
   // Load Images from files ...
-    logo_MIT = loadImage("MIT_logo.png");
-    logo_PHL = loadImage("PHL_logo.png");
+  logo_MIT = loadImage("MIT_logo.png");
+  logo_PHL = loadImage("PHL_logo.png");
   // Load and Resize Image of Model Equations
   equations = loadImage("equations_transparent.png");
-    float ratio = (float) equations.width / equations.height;
-    equations.resize( int(ratio*375), 375);
+  float ratio = (float) equations.width / equations.height;
+  equations.resize( int(ratio*375), 375);
   // Load Satellite Image of Kendall Neighborhood (Generated with Ira's SimpleMapApp)
-    basemap = loadImage("basemap.png"); 
+  basemap = loadImage("basemap.png"); 
+  
+  // Load CoEfficients for the model
+  setFit(fitType);
   
   // Load Data and Model Structures, values, and precalculations
   initEnvironment();

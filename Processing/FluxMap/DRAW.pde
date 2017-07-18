@@ -252,16 +252,6 @@ void drawGridArea() {
         }
       }
     }
-    String name ="";
-    if (modelType.equals("point") ) {
-      name += "(1) Point Source Model";
-    } else if(modelType.equals("gaussian") ) {
-      name += "(2) Gaussian LED Model";
-    }
-    fill(textColor);
-    textAlign(RIGHT);
-    text(name, dX + gridWidth - 10, dY + 20);
-    textAlign(LEFT);
   }
   
   // Draw Error
@@ -302,6 +292,21 @@ void drawGridArea() {
     text("Model Too Dim", dX + gridWidth - 10, height - dY - 35);
     fill(TOO_BRIGHT);
     text("Model Too Bright", dX + gridWidth - 10, height - dY - 15);
+    textAlign(LEFT);
+  }
+  
+  // Draw Model Label
+  if (displaySimulation || displayError) {
+    String name ="";
+    if (modelType.equals("point")) {
+      name += "Point Source Model";
+    } else if(modelType.equals("gaussian") ) {
+      name += "Gaussian LED Model";
+    }
+    name += "\nFit Type: " + fitNames[fitType];
+    fill(textColor);
+    textAlign(RIGHT);
+    text(name, dX + gridWidth - 10, dY + 20);
     textAlign(LEFT);
   }
   

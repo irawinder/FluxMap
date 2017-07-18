@@ -6,6 +6,44 @@ import java.util.*;
 //Fraction of grid extents to bleed data offscreen
 float margin = 0.1;
 
+String[] fitNames = {
+  "Sample Test Coefficients",
+  "Least Squares (All Data)",
+  "Least Squares (Sample n=500)",
+  "Least Squares (Quiet Neighborhood Area)"
+};
+
+void setFit(int set) {
+  
+  // Initial Coefficients
+  pointHeight = 10.0;
+  gaussianHeight = 10.0;
+  
+  // Dummy Variables
+  pointLuminance = 2000.0;
+  gaussianLuminance = 800.0;
+  gaussianG = 1.5;
+  
+  // The Following Values Calculated 
+  // by Anthony Cheng in a seperate analysis
+  if (set == 1) {
+    // All Data Fit (n=all)
+    pointLuminance = 1225.51;
+    gaussianLuminance = 807.71;
+    gaussianG = 1.54;
+  } else if (set == 2) {
+    // "Random" Data Fit (n = 500)
+    pointLuminance = 1075.51;
+    gaussianLuminance = 682.71;
+    gaussianG = 1.94;
+  } else if (set == 3) {
+    // "Quiet" Neighborhood Fit
+    pointLuminance = 966.0;
+    gaussianLuminance = 551.12;
+    gaussianG = 4.72;
+  }
+}
+
 void initLightReadings() {
   
   lightReading = new ArrayList<PVector[]>();
