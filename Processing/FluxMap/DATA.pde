@@ -20,8 +20,8 @@ void setFit(int set) {
   gaussianHeight = 10.0;
   
   // Dummy Variables
-  pointLuminance = 2000.0;
-  gaussianLuminance = 800.0;
+  pointLuminance = 3000.0;
+  gaussianLuminance = 1500.0;
   gaussianG = 1.5;
   
   // The Following Values Calculated 
