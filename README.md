@@ -19,3 +19,5 @@ Use this application to explore empirical urban light data and evaluate accuracy
 # Model Viewer
  ![FluxMap](Processing/FluxMap/screenshots/modelView.png "Light Model Viewer")
 
+# Sponsors
+This research made possible by a generous grant from MIT and Philips Research.
