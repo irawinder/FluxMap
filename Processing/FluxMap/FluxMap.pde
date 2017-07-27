@@ -36,7 +36,7 @@ import java.awt.event.*;
 int GRID_U = 400;
 int GRID_V = 400; 
 int MIN_RES = 50;  // Visually meaningless beyond this
-int MAX_RES = 800; // Empirically, takes too much processing power to do larger grid
+int MAX_RES = 400; // Empirically, takes too much processing power to do larger grid
 float GRID_SIZE = 0.0025; // km
 // (Kendall Square)
 float LAT = 42.367861; 
@@ -89,7 +89,7 @@ boolean initializing = false;
 
 void setup() {
   
-  size(1280, 768);
+  size(1366, 768);
   
   // Window may be resized after initialized
   frame.setResizable(true);

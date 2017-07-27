@@ -68,6 +68,10 @@ void loadMenu(int canvasWidth, int canvasHeight) {
     mainMenu.buttons[ bHash.get("1") ].isPressed = false;
     mainMenu.buttons[ bHash.get("2") ].isPressed = true;
   }
+  
+  if (gridU >= MAX_RES || gridV >= MAX_RES) {
+    mainMenu.buttons[ bHash.get(">") ].active = false;
+  }
 
 }
 
