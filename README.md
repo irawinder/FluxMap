@@ -1,26 +1,26 @@
 # FluxMap
 Use this open source application to explore empirical urban light data and evaluate accuracy of urban light simulations.
 
-## Features:
-1. View Empirical Urban Lighting Data (i.e. lux values from a vehicle sensor)
-2. View Empirical Urban Lighting Fixtures (i.e. light poles)
-3. Simulate Lighting Data from Models of Lighting Fixtures
-4. Compare Fit of Models to Observed Data
+ Features:
+ 1. View Empirical Urban Lighting Data (i.e. lux values from a vehicle sensor)
+ 2. View Empirical Urban Lighting Fixtures (i.e. light poles)
+ 3. Simulate Lighting Data from Models of Lighting Fixtures
+ 4. Compare Fit of Models to Observed Data
 
-## Data Viewer
+ Data Viewer
  ![FluxMap](Processing/FluxMap/screenshots/dataView.png "Light Data Viewer")
 
-## Model Viewer
+ Model Viewer
  ![FluxMap](Processing/FluxMap/screenshots/modelView.png "Light Model Viewer")
 
 # Tactile Matrix
 Insights from the project were implemented as an interactive simulation of pedestrian safety conditions at an intersection. This software requires a Tactile Matrix to operate.
 
-## Features:
-1. Place your own lighting fixtures at an intersection.
-2. View Heatmaps of (a) lighting conditions and (b) simulated safety conditions.
+ Features:
+ 1. Place your own lighting fixtures at an intersection.
+ 2. View Heatmaps of (a) lighting conditions and (b) simulated safety conditions.
 
-## Interface
+ Interface
  ![TactileMatrix](Processing/TactileMatrix/screenshots/tactilematrix.jpg "Ira Winder with Tactile Matrix")
 
 # Directions:
