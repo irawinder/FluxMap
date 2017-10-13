@@ -1,5 +1,5 @@
 # FluxMap
-Developer: Ira Winder, Anthony Cheng
+by Ira Winder, Anthony Cheng
 Use this open source application to explore empirical urban light data and evaluate accuracy of urban light simulations.
 
  Features:
@@ -8,24 +8,24 @@ Use this open source application to explore empirical urban light data and evalu
  3. Simulate Lighting Data from Models of Lighting Fixtures
  4. Compare Fit of Models to Observed Data
 
- Data Viewer
+ Data Viewer:
  ![FluxMap](Processing/FluxMap/screenshots/dataView.png "Light Data Viewer")
 
- Model Viewer
+ Model Viewer:
  ![FluxMap](Processing/FluxMap/screenshots/modelView.png "Light Model Viewer")
 
 # Tactile Matrix
-Developer: Ira Winder
+by Ira Winder
 Insights from the project were implemented as an interactive simulation of pedestrian safety conditions at an intersection. This software requires a Tactile Matrix to operate.
 
  Features:
  1. Place your own lighting fixtures at an intersection.
  2. View Heatmaps of (a) lighting conditions and (b) simulated safety conditions.
 
- Interface
+ Interface:
  ![TactileMatrix](Processing/TactileMatrix/screenshots/tactilematrix.jpg "Ira Winder with Tactile Matrix")
 
-# Directions:
+# Directions
 1. Download Processing (2.2.1) - https://processing.org/download/
 2. Confirm Lastest Java is Installed https://java.com/en/download/mac_download.jsp
 3. Clone The Repository
