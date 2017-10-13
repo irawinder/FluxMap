@@ -1,4 +1,5 @@
 # FluxMap
+Developer: Ira Winder, Anthony Cheng
 Use this open source application to explore empirical urban light data and evaluate accuracy of urban light simulations.
 
  Features:
@@ -14,6 +15,7 @@ Use this open source application to explore empirical urban light data and evalu
  ![FluxMap](Processing/FluxMap/screenshots/modelView.png "Light Model Viewer")
 
 # Tactile Matrix
+Developer: Ira Winder
 Insights from the project were implemented as an interactive simulation of pedestrian safety conditions at an intersection. This software requires a Tactile Matrix to operate.
 
  Features:
